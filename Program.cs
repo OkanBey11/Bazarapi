@@ -61,6 +61,7 @@ builder.Services.AddAuthentication(optinos =>{
 builder.Services.AddScoped<IStockRepository, StockRepository>();
 builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
 
 builder.Services.AddSwaggerGen(option =>
 {
